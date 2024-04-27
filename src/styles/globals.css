@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.3;
+    background-color: #f8fbff;
+}
+.bg_color
+{
+    background-color: #696cff;
+}
+.d-btn-head
+{
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.d-buttonhead 
+{
+   
+    color:#fff;
+    background-color: #696cff;
+   
+}
+.d-buttonhead-ouline
+{
+    border: 1px solid #696cff;
+    color:#696cff
+} 
+.btn-outline
+{
+    border: 1px solid #696cff;
+}
+.custom_tab .p-tabview .p-tabview-nav 
+{
+    gap: 10px;
+}
+.custom_tab .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link 
+{
+    background: #ffffff !important;
+    border-color: #696cff;
+    color: #696cff;
+}
+.custom_tab .p-tabview .p-tabview-nav li .p-tabview-nav-link
+{
+    padding: 0.75rem;
+    font-weight: 500;
+}
+.custom_tab  .p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: inset 0 0 0 0.2rem transparent;
+}
+
+.upload-img img{
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100px;
+    border-radius: 50%;
+    max-height: 100px;
+    height: 100px;
+    width: 100px;
+}
+.btn-outline
+{
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #696cff;
+    color:#696cff
+}
+.btn-outline:hover 
+{
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #696cff;
+    color:#fff;
+    background: #696cff;;
+
+}
+.p-inputtext
+{
+    padding: 0.4rem 0.5rem;
+    font-size: 0.90rem;
+    border-radius: 7px;
+    border: 1px solid #c3c3c3;
+}
+.p-inputtext:enabled:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem transparent;
+    border-color: #6366F1;
+}
+.label-text{
+    font-size: 14px;
+    color:#333;
+    font-weight: 600;
+}
+.p-dropdown-panel .p-dropdown-items
+{
+    padding: 0.2rem 0;
+}
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item
+{
+    padding: 0.5rem 1.25rem;
+}
+.p-datepicker table td {
+    padding: 0.1rem;
+}
+.submitbtn {
+    width: 280px !important;
+    display: inline-block;
+    color: #252537;
+    height: 50px;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    letter-spacing: 0.05em;
+   }
+   .pre_btn
+   {
+    padding: 6px 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #696cff;
+    color: #696cff;
+   }
+   .next_btn
+   {
+    color: #fff;
+    background-color: #696cff;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+   }
+   .green_btn
+   {
+    color: #fff;
+    background-color: #019049;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 6px;
+   }
+
+   .p-autocomplete {
+   width: 100% !important;
+   }
+
+   .p-inputtext{
+    width: 100%;
+   }
