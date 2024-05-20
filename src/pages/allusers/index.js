@@ -288,12 +288,26 @@ console.log("globalFilterValue",globalFilterValue);
                           header="फोन नं."
                           sortable
                           style={{ minWidth: "6rem" }}
+                          
                         ></Column>
                         <Column
-                          field="vaivsayname.name"
+                          field="vaivsayname"
                           header="व्यवसाय"
                           sortable
                           style={{ minWidth: "10rem" }}
+                          body={(rowData) => {
+                         
+                            if (rowData.vaivsayname && rowData.vaivsayname.length > 0) {
+                              const firstVaivsayname = rowData.vaivsayname[0];
+                              return (
+                                <span>
+                                  {firstVaivsayname.name}
+                                </span>
+                              );
+                            } else {
+                              return null;
+                            }
+                          }}
                         ></Column>
                         <Column
                           field="dharm.name"
@@ -302,7 +316,7 @@ console.log("globalFilterValue",globalFilterValue);
                           style={{ minWidth: "6rem" }}
                         ></Column>
                         <Column
-                          field="cast.name"
+                          field="cast"
                           header="जात"
                           sortable
                           style={{ minWidth: "6rem" }}
@@ -379,6 +393,7 @@ console.log("globalFilterValue",globalFilterValue);
                       src={"/assets/images/pdf.png"}
                       width={"37"}
                       height={"48"}
+                      alt=""
                       className="mx-auto iconImg w-full"
                     />
                   </div>
@@ -405,6 +420,7 @@ console.log("globalFilterValue",globalFilterValue);
                     <Image
                       src={"/assets/images/xls.png"}
                       width={"37"}
+                      alt=""
                       height={"48"}
                       className="mx-auto iconImg w-full"
                     />
